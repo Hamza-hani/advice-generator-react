@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270deg, #74ebd5, #ACB6E5, #89f7fe, #66a6ff);
+  background-size: 800% 800%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background 0.5s ease;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  transition: color 0.5s;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.toggle:hover {
+  opacity: 1;
+}
+
+.app.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.app.dark h1 {
+  color: #eee;
+}
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #ffd700;
+}
+
+.app.dark .footer {
+  color: #ccc;
+}
+
+.app.dark .footer .social-icons a:hover {
+  color: #facc15;
+}
