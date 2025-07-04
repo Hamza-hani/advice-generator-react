@@ -25,8 +25,8 @@ function App() {
     fetchAdvice();
   }, []);
 
-  const githubLink = "https://github.com/Hamza-hani";
-  const linkedinLink = "https://www.linkedin.com/in/hamza-kamran-271872297/";
+  const githubLink = "https://github.com/haider14-9abbaas";
+  const linkedinLink = "https://www.linkedin.com/in/syed-haider-abbas-zaidi-132525215/";
 
   return (
     <div className={`app ${darkMode ? 'dark' : ''}`}>
@@ -37,7 +37,7 @@ function App() {
       <AdviceCard advice={advice} loading={loading} onNewAdvice={fetchAdvice} />
 
       <footer className="footer">
-        <p>Developed by Hamza Kamran</p>
+        <p>Developed by Haider abbas</p>
         <div className="social-icons">
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
             <FaGithub />
